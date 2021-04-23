@@ -41,7 +41,7 @@
 #define HAVE_GETOPT_H 1
 
 /* Define to 1 if you have the `getpass' function. */
-/* #undef HAVE_GETPASS */
+#define HAVE_GETPASS 1
 
 /* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1
