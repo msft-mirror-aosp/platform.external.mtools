@@ -302,7 +302,9 @@
 #define HAVE_TERMIOS_H 1
 
 /* Define to 1 if you have the <termio.h> header file. */
+#if !defined(ANDROID_HOST_MUSL)
 #define HAVE_TERMIO_H 1
+#endif
 
 /* Define to 1 if you have the `toupper_l' function. */
 #define HAVE_TOUPPER_L 1
