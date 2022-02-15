@@ -10,9 +10,9 @@ third_party {
   }
   url {
     type: ARCHIVE
-    value: "https://ftp.gnu.org/gnu/mtools/mtools-4.0.26.tar.lz"
+    value: "https://ftp.gnu.org/gnu/mtools/mtools-4.0.37.tar.lz"
   }
-  version: "4.0.26"
-  last_upgrade_date { year: 2021 month: 2 day: 3 }
+  version: "4.0.37"
+  last_upgrade_date { year: 2022 month: 1 day: 9 }
   license_type: BY_EXCEPTION_ONLY
 }
