@@ -1,7 +1,7 @@
 '\" t
-.TH mshowfat 1 "28Nov20" mtools-4.0.26
+.TH mclasserase 1 "28Nov20" mtools-4.0.26
 .SH Name
-mshowfat - shows FAT clusters allocated to file
+mclasserase - erase memory cards
 '\" t
 .de TQ
 .br
@@ -20,19 +20,35 @@ end of this man page for details.
 .PP
 .SH Description
 .PP
-The \fR\&\f(CWmshowfat\fR command is used to display the FAT entries for a
-file.  Syntax:
+The \fR\&\f(CWmclasserase\fR command is used to wipe memory cards by
+overwriting it three times: first with \fR\&\f(CW0xff\fR, then with
+\&\fR\&\f(CW0x00\fR, then with \fR\&\f(CW0xff\fR again. The command uses the following
+syntax:
 .PP
-.ft I
-.nf
-\&\fR\&\f(CWmshowfat\fR [\fR\&\f(CW-o\fR \fIoffset\fR] \fIfiles\fR
-.fi
-.ft R
  
+.nf
+.ft 3
+.in +0.3i
+\&\fR\&\f(CWmclasserase [\fR\&\f(CW-d] \fImsdosdrive\fR\&\f(CW
+.fi
+.in -0.3i
+.ft R
 .PP
-If no offset is given, a list of all clusters occupied by the file is
-printed. If an offset is given, only the number of the cluster
-containing that offset is printed.
+ 
+\&\fR
+.PP
+MS-DOS drive is optional, if none is specified, use \fR\&\f(CWA:\fR. If more than
+one drive are specified, all but the last are ignored.
+.PP
+\&\fR\&\f(CWMclasserase\fR accepts the following command line options:
+.TP
+\&\fR\&\f(CWd\fR\ 
+Stop after each erase cycle, for testing purposes
+.TP
+\&\fR\&\f(CWp\fR\ 
+Not yet implemented
+.PP
+\&\fR\&\f(CWMclasserase\fR returns 0 on success or -1 on failure.
 .PP
 .SH See\ Also
 Mtools' texinfo doc
