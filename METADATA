@@ -1,3 +1,6 @@
+# *** THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS.  PLEASE
+#     CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE
+#     DEPENDING ON IT IN YOUR PROJECT. ***
 name: "mtools"
 description:
     "Mtools is a collection of utilities to access MS-DOS disks from GNU and "
@@ -14,5 +17,6 @@ third_party {
   }
   version: "4.0.37"
   last_upgrade_date { year: 2022 month: 1 day: 9 }
+  license_note: "contains GFDL documentation"
   license_type: BY_EXCEPTION_ONLY
 }
