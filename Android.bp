@@ -25,6 +25,7 @@ license {
     name: "external_mtools_license",
     visibility: [":__subpackages__"],
     license_kinds: [
+        "SPDX-license-identifier-GPL-3.0",
         "legacy_by_exception_only", // by exception only
     ],
     license_text: [
