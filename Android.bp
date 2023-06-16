@@ -106,8 +106,6 @@ cc_binary_host {
         "vfat.c",
         "xdf_io.c",
     ],
-    // Needs C11 language feature.
-    c_std: "experimental",
     cflags: [
         "-DSYSCONFDIR=\"/etc\"",
         "-Wno-missing-field-initializers",
