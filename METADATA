@@ -3,8 +3,8 @@
 #     DEPENDING ON IT IN YOUR PROJECT. ***
 name: "mtools"
 description:
-    "Mtools is a collection of utilities to access MS-DOS disks from GNU and "
-    "Unix without mounting them."
+  "Mtools is a collection of utilities to access MS-DOS disks from GNU and "
+  "Unix without mounting them."
 
 third_party {
   url {
@@ -19,4 +19,9 @@ third_party {
   last_upgrade_date { year: 2022 month: 1 day: 9 }
   license_note: "contains GFDL documentation"
   license_type: BY_EXCEPTION_ONLY
+  security: {
+    tag: "android:on_device_usage"
+    tag: "android:privilege_level:privileged"
+    tag: "android:untrusted_input"
+  }
 }
